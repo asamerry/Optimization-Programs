@@ -2,7 +2,7 @@ import numpy as np
 from sympy import symbols, sympify
 import sys
 
-from gradientDescent_uncon import gradientDescent
+from gradientDescent import gradientDescent
 from taylorSeries import taylorSeries
 
 
