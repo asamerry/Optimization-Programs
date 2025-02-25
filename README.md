@@ -1,1 +1,6 @@
-A series of programs designed to emulate optimization techniques from UCSB Math 132A - Optimization. Algorithms include basic gradient descent, the conjugate gradient method, Kacsmarz's algorithm, and more. 
+A series of programs designed to emulate optimization techniques from UCSB Math 132A - Optimization. Currently this repository has programs for the following methods:
+- Least Squares
+- Conjugate-Gradient
+- Kacsmarz's Algorithm
+
+This programs are not necessarily programmatically optimized, but they do all do their jobs mathematically under the constraints outlined under each method. 
