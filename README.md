@@ -4,4 +4,4 @@ A series of programs designed to emulate optimization techniques from UCSB Math 
 - Conjugate-Gradient
 - Kaczmarz's Algorithm
 
-This programs are not necessarily programmatically optimized, but they do all do their jobs mathematically under the constraints outlined under each method. 
+These scripts are not necessarily programmatically optimized, but they do all do their jobs mathematically under the standard constraints outlined for each method. 
