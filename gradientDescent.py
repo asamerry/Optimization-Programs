@@ -4,10 +4,11 @@ import numpy as np
 def f(x):
     return 0.5 * x.T @ Q @ x - b.T @ x
 
-def gradientDescent(Q:np.ndarray[np.float64], b:np.ndarray[np.float64], alpha:float = 0.05, epsilon:float = 10e-25, max_iters:int = 500, display:bool = True) -> None: 
-    # print("Initial Guess:")
-    # x0 = np.array([float(input(f"x{i+1} = ")) for i in range(Q.shape[0])])
-    x = [np.zeros(Q.shape[0])]
+def gradientDescent(Q:np.ndarray[np.float64], b:np.ndarray[np.float64], alpha:float = 0.05, epsilon:float = 10e-25, max_iters:int = 500, display:bool = True) -> None:
+    # Takes initial guess from input
+    print("Initial Guess:")
+    x0 = np.array([float(input(f"x{i+1} = ")) for i in range(Q.shape[0])])
+    x = [x0]
     
     # Iterates a maximum of max_iters times
     for _ in range(max_iters):
