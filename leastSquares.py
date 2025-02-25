@@ -4,10 +4,9 @@ import numpy as np
 
 
 def main():
-    A = np.array([[1, 2],
-                  [1, 1],
-                  [3, 2]])
-    b = np.array([6, 4, 5])
+    A = np.array([[1, 0, 1, 0],
+                  [0, 1, 1, 1]])
+    b = np.array([2, 1])
 
     opt_x = np.linalg.inv(A.T @ A) @ A.T @ b
 
