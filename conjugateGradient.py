@@ -5,7 +5,7 @@ import numpy as np
 
 def conjugateGradient():
     # Displays g, d, a, and x at each step if True; displays only x if False
-    showDetails = True
+    showDetails = True 
 
     # Initialize Q and b
     Q = np.array([[2, 1, 2],
@@ -22,6 +22,7 @@ def conjugateGradient():
     a = []
 
     # Iterate the same number of times as the dimension of Q
+    print(f"x0 = {x[0]}")
     for k in range(dim):
         g.append( Q @ x[k] - b )
    

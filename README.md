@@ -1,5 +1,6 @@
 A series of programs designed to emulate optimization techniques from UCSB Math 132A - Optimization. Currently this repository has programs for the following methods:
 - Linear Programs (in standard and non-standard form)
+- Gradient Descent
 - Least Squares
 - Conjugate-Gradient
 - Kaczmarz's Algorithm
