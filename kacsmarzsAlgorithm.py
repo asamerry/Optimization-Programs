@@ -9,7 +9,7 @@ def mod(k, m):
         return m
     return k%m
 
-def main():
+def kacsmarzsAlgorithm():
     # Initializes A and B
     A = np.array([[1, 0, 1, 0],
                   [0, 1, 1, 1]])
@@ -29,4 +29,4 @@ def main():
     
 
 if __name__ == "__main__":
-    main()
+    kacsmarzsAlgorithm()

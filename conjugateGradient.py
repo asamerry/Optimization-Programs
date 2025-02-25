@@ -3,7 +3,7 @@
 import numpy as np
 
 
-def main():
+def conjugateGradient():
     # Displays g, d, a, and x at each step if True; displays only x if False
     showDetails = True
 
@@ -41,4 +41,4 @@ def main():
         print(f"x{k+1} = {np.round(x[k+1], 4)}")
 
 if __name__ == "__main__":
-    main()
+    conjugateGradient()
