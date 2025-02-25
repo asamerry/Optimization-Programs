@@ -1,1 +1,9 @@
-Both files implement the same type of problem. The MATLAB program does seem to be a bit more user friendly as you can change every part of the linear program manually in order to set up the problem however you feel, whereas the Python program, by default, always minimizes $c^Tx$ subject to $Ax \leq b$. Due to this, the Python example has negative values in every entry of A and b since the example we have based it on uses $Ax \geq b$. Similarly, if you wanted to instead maximize $c^Tx$, you could take the negative of the result of minimizing $-c^Tx$. 
+Both files implement the same type of problem. The MATLAB program does seem to be a bit more user friendly as it doesn't require the problem to be stated in standard equality or standard inequality form, whereas the Python algorithm does. Since every linear program can be put can be put into one of these two forms, either program can solve any linear program, however to use the Python program the user will generally need to be able to convert the program into a standard form.
+
+The standard equality form and standard inequality form are given by 
+$$\min c^T x$$
+$$\text{subject to } Ax = b$$
+and 
+$$\min c^T x$$
+$$\text{subject to } Ax \leq b$$
+respectively. 
