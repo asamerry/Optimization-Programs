@@ -2,6 +2,6 @@ A series of programs designed to emulate optimization techniques from UCSB Math 
 - Linear Programs (in standard and non-standard form)
 - Least Squares
 - Conjugate-Gradient
-- Kacsmarz's Algorithm
+- Kaczmarz's Algorithm
 
 This programs are not necessarily programmatically optimized, but they do all do their jobs mathematically under the constraints outlined under each method. 
