@@ -6,15 +6,10 @@
 import numpy as np
 
 # Similar to normal modulus function, but returns m if m|m
-def mod(k, m):
+def mod(k, m) -> int:
     return m if k%m == 0 else k%m
 
-def kaczmarzsAlgorithm(iterations:int, mu:float = 1):
-    # Initializes A and B
-    A = np.array([[1, 0, 1, 0],
-                  [0, 1, 1, 1]])
-    b = np.array([2, 1])
-
+def kaczmarzsAlgorithm(A:np.ndarray[np.float64], b:np.ndarray[np.float64], iterations:int, mu:float = 1) -> None:
     # Define dimensions and initial guess of x0 = 0
     m, n = A.shape
     x = [np.zeros(n)]
@@ -26,4 +21,9 @@ def kaczmarzsAlgorithm(iterations:int, mu:float = 1):
         print(f"x{k+1} = {x[k+1]}")
 
 if __name__ == "__main__":
-    kaczmarzsAlgorithm(iterations=5, mu=1)
+    # Initializes A and b
+    A = np.array([[1, 0, 1, 0],
+                  [0, 1, 1, 1]])
+    b = np.array([2, 1])
+
+    kaczmarzsAlgorithm(A, b, iterations=5, mu=1)
